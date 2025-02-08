@@ -1,0 +1,35 @@
+:root{
+  --white: #FFFFFF;
+  --black: #060808;
+  --light-black: #323232;
+
+  --grey: #CCCCCC;
+
+  --first-blue:  #2D9BCC;
+  --second-blue: #1670B5;
+  --third-blue: #0B4D7B;
+
+  --pink-utils: #FD71DF;
+
+  --red-utils: #B91F1C;
+
+  --frontpage-height: 900px;
+}
+
+html{
+  font-size: 62.5%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  z-index: -200;
+}
+
+@font-face {
+  font-family: "ZTGatha";
+  src: local("ZTGatha"), url(assets/zt_gatha/ZTGatha-SemiBold.ttf) format("truetype");
+}
+
+body{
+  background-color: var(--white) !important;
+}

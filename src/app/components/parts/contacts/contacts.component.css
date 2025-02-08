@@ -1,0 +1,182 @@
+* {
+  font-family: "ZTGatha", sans-serif;
+}
+
+h1 {
+  color: var(--third-blue);
+  text-transform: uppercase;
+  font-size: 8rem;
+  font-family: "ZTGatha", sans-serif;
+}
+
+h2 {
+  color: var(--first-blue);
+  text-transform: capitalize;
+  font-size: 5rem;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+.stop {
+  font-size: 2rem;
+}
+
+/** ---- **/
+.contacts-table {
+  width: 100%;
+  text-align: center;
+}
+
+.contact--first--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact--first--row .contact--links {
+  width: 100%;
+}
+
+.contact--first--row .contact--links a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.contact--first--row .contact--links a:hover {
+  text-decoration: none;
+  color: var(--pink-utils);
+}
+
+.contact--first--row .contact--shifts {
+  width: 100%;
+}
+
+.contact--second--row {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact--second--row .contact--findus {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact--second--row .contact--findus .findus--maps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact--second--row .contact--findus .findus--maps iframe {
+  width: 100%;
+  height: 40vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  border-radius: 2.5rem;
+}
+
+.contact--second--row .contact--findus .findus--bus {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.contact--second--row .contact--findus .findus--bus h2 {
+  text-align: center;
+}
+
+.contact--second--row .contact--findus .findus--bus .metro-stops {
+  padding-left: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.contact--second--row .contact--findus .findus--bus .stop {
+  color: var(--third-blue);
+}
+
+.contact--second--row .contact--findus .findus--bus h3 {
+  padding-left: 2rem;
+}
+
+.contact--second--row .contact--findus .findus--bus .bus-stops {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+/* SMALL SIZE */
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .stop {
+    font-size: 1.5rem;
+  }
+
+  .contact--first--row {
+    flex-direction: column;
+  }
+
+  .contact--second--row .contact--findus {
+    flex-direction: column;
+  }
+
+  .contact--first--row .contact--shifts {
+    padding-top: 2rem;
+  }
+
+  .contact--second--row .contact--findus .findus--bus {
+    padding-top: 2rem;
+  }
+}
+
+/* MEDIUM SIZE */
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+
+
+  .contact--first--row {
+    flex-direction: column;
+  }
+
+  .contact--second--row .contact--findus {
+    flex-direction: column;
+  }
+
+  .contact--first--row .contact--shifts {
+    padding-top: 2rem;
+  }
+
+  .contact--second--row .contact--findus .findus--bus {
+    padding-top: 2rem;
+  }
+}

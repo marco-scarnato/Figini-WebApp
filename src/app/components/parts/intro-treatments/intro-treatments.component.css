@@ -1,0 +1,42 @@
+.treatments{
+  display: flex;  /* Utilizza Flexbox per centrare il contenuto */
+  justify-content: center;  /* Centra il contenuto orizzontalmente */
+  align-items: center;  /* Centra il contenuto verticalmente */
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.treatments h1{
+  color: var(--third-blue);
+  text-transform: uppercase;
+  font-size: 8rem;
+  font-family: "ZTGatha", sans-serif;
+}
+
+.treatments .treatments--content{
+  display: flex;
+  justify-content: space-between;  /* Centra il contenuto orizzontalmente */
+  align-items: center;  /* Centra il contenuto verticalmente */
+  gap:2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* SMALL SIZE */
+@media screen and (max-width:500px) {
+  .treatments h1{
+    font-size: 4rem;
+  }
+  .treatments .treatments--content{
+    flex-direction: column;
+  }
+}
+
+/* MEDIUM SIZE */
+@media screen and (min-width:501px) and (max-width:1000px) {
+  .treatments h1{
+  }
+  .treatments .treatments--content{
+    flex-direction: column;
+  }
+}

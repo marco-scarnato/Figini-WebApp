@@ -1,0 +1,106 @@
+.treatment {
+  display: flex; /* Utilizza Flexbox per centrare il contenuto */
+  justify-content: center; /* Centra il contenuto orizzontalmente */
+  align-items: center; /* Centra il contenuto verticalmente */
+  flex-direction: column;
+}
+
+.treatment .intro {
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem;
+
+  display: flex; /* Utilizza Flexbox per centrare il contenuto */
+  justify-content: center; /* Centra il contenuto orizzontalmente */
+  align-items: center; /* Centra il contenuto verticalmente */
+  flex-direction: column;
+}
+
+.trt-btn-back{
+  width: 100%;
+}
+
+.trt-btn-back a{
+  font-size: 2.7rem;
+  border-radius: 5rem;
+  color: var(--black);
+  padding: 1rem;
+}
+
+.trt-btn-back a:hover{
+  color: var(--first-blue);
+}
+
+.treatment .intro .trt--content {
+  display: flex;
+  justify-content: center; /* Centra il contenuto orizzontalmente */
+  align-items: center; /* Centra il contenuto verticalmente */
+}
+
+.treatment .intro .trt--content .intro--title {
+  display: flex; /* Aggiunto per allineare verticalmente */
+  justify-content: center; /* Centra il testo verticalmente */
+  align-items: flex-start; /* Allinea il testo a sinistra */
+  flex-direction: column; /* Mantiene la colonna per il testo */
+  padding: 0.5rem;
+  max-width: 600px;
+  height: 100%; /* Assicura che l'altezza copra tutto il contenitore */
+}
+
+.treatment .intro .trt--content .intro--title h1 {
+  color: var(--third-blue);
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-family: "ZTGatha", sans-serif;
+}
+
+.treatment .intro .trt--content .intro--title h1 b {
+  color: var(--pink-utils);
+}
+
+.treatment .intro .trt--content .intro--image {
+  padding: 0.5rem;
+}
+
+.treatment .intro .trt--content .intro--image img {
+  max-width: 600px;
+  max-height: 50vh;
+  width: 100%;
+  border-radius: 5rem;
+}
+
+.treatment .intro .trt--description {
+  width: 100%;
+  max-width: 900px;
+  font-family: "ZTGatha", sans-serif;
+  font-size: 2.7rem;
+  padding: 1.5rem;
+}
+
+/* SMALL SIZE */
+@media screen and (max-width: 500px) {
+  .treatment .intro .trt--content {
+    flex-direction: column;
+  }
+
+  .treatment .intro .trt--content .intro--title {
+    text-align: center;
+  }
+
+  .treatment .intro .trt--content .intro--title h1 {
+    font-size: 3.5rem;
+  }
+
+  .treatment .intro .trt--description {
+    width: 100%;
+    font-family: "ZTGatha", sans-serif;
+    font-size: 1.5rem;
+  }
+}
+
+/* MEDIUM SIZE */
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  .treatment .intro .trt--content .intro--title h1 {
+    font-size: 3.5rem;
+  }
+}

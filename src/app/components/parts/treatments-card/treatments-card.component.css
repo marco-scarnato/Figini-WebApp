@@ -1,0 +1,70 @@
+.tcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  border-radius: 5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aggiungi ombra */
+  padding: 2rem;
+  width: 100%;
+  max-width: 350px; /* Imposta un massimo per la card */
+  height: 100%;
+  aspect-ratio: 1 / 1.5; /* Proporzioni della card */
+  background-color: var(--white);
+  transition: box-shadow 0.3s ease;
+}
+
+.tcard:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta l'ombra al passaggio del mouse */
+}
+
+/* Sezione immagine con proporzioni 1:1 */
+.tcard .tcard--image {
+  width: 100%;
+  aspect-ratio: 1; /* Mantiene proporzione 1:1 per l'immagine */
+  overflow: hidden;
+  border-radius: 3rem;
+}
+
+.tcard .tcard--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Assicura che l'immagine copra il contenitore senza distorsioni */
+  border-radius: inherit;
+}
+
+/* Stile del titolo */
+.tcard .tcard--title {
+  color: var(--black);
+  font-size: 2.5rem; /* Font size dinamico */
+  font-family: "ZTGatha", sans-serif;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  word-wrap: break-word; /* Impedisce al testo di uscire dal contenitore */
+}
+
+/* Stile della sezione link */
+.tcard .link-space {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.tcard .link-space a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--third-blue);
+  border-radius: 5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tcard .link-space a:hover {
+  color: var(--third-blue);
+  background-color: var(--pink-utils);
+}

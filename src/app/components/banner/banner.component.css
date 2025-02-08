@@ -1,0 +1,115 @@
+.banner-bs{
+  font-size: 2rem;
+  font-family: "ZTGatha", sans-serif;
+  background-color:  var(--first-blue);
+  color: var(--white);
+  padding: 2rem 1rem 1rem;
+}
+
+.banner-bs .banner--content{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.banner--content .banner-tel{
+  border: 1px solid var(--third-blue);
+  background-color: var(--third-blue);
+  border-radius: 2.5rem;
+  padding: 1rem 3rem;
+
+  color: var(--white);
+  text-decoration: none;
+}
+
+.banner--content .banner-tel:hover{
+  background-color: var(--white);
+  color: var(--pink-utils);
+  border: 1px solid var(--white);
+
+  text-decoration: none;
+}
+
+.banner--content .banner-link{
+  color: var(--white);
+  text-decoration: none;
+}
+
+.banner--content .banner-link:hover{
+  color: var(--third-blue);
+  text-decoration: underline;
+}
+
+.banner-phone{
+  display: none;
+}
+
+.banner-natale {
+  font-size: 2rem;
+  font-family: "ZTGatha", sans-serif;
+  background: url("src/assets/forBuild/banner-natale.jpg") no-repeat center center;
+  background-size: cover;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem 1rem;
+}
+
+
+.banner-natale .banner--content{
+  border-radius: 2.5rem;
+  border: 0.3rem solid var(--white);
+  padding: 1rem 3rem;
+  text-align: center;
+}
+
+
+
+/* SMALL SIZE */
+@media screen and (max-width:500px) {
+  .banner-phone{
+    display: block;
+  }
+
+  .banner-desktop{
+    display: none;
+  }
+
+  .banner-bs{
+    font-size: 1.2rem;
+  }
+
+  .banner-bs .banner--content{
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+
+  .banner-natale {
+    font-size: 1.2rem;
+  }
+
+  .banner-natale .banner--content{
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+}
+
+/* MEDIUM SIZE */
+@media screen and (min-width:501px) and (max-width:1000px) {
+  .banner-bs{
+    font-size: 1rem;
+  }
+
+  .banner-bs .banner--content{
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+
+  .banner-natale {
+    font-size: 1rem;
+  }
+
+  .banner-natale .banner--content{
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+}

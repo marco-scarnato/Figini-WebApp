@@ -1,0 +1,22 @@
+.banner--footer{
+  background-color:  var(--light-black);
+  color: var(--white);
+  font-family: "ZTGatha", sans-serif;
+
+
+  display: flex;
+  justify-content: center;
+}
+
+.banner--footer .banner--content{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aggiunto per centrare gli elementi p orizzontalmente */
+  text-align: center; /* Aggiunto per centrare il testo all'interno degli elementi p */
+}
+
+p{
+  font-size: 1.5rem;
+}

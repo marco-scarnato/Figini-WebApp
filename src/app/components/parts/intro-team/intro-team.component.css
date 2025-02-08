@@ -1,0 +1,76 @@
+.intro-team{
+  display: flex;  /* Utilizza Flexbox per centrare il contenuto */
+  justify-content: center;  /* Centra il contenuto orizzontalmente */
+  align-items: center;  /* Centra il contenuto verticalmente */
+  flex-direction: column;
+}
+
+.intro-team .intro--content{
+  display: flex;
+  justify-content: center;  /* Centra il contenuto orizzontalmente */
+  align-items: center;  /* Centra il contenuto verticalmente */
+  gap:2rem;
+}
+
+.intro-team .intro--content .intro--title{
+  display: flex;  /* Aggiunto per allineare verticalmente */
+  justify-content: center;  /* Centra il testo verticalmente */
+  align-items: center;  /* Allinea il testo a sinistra */
+  text-align: center;
+  flex-direction: column;  /* Mantiene la colonna per il testo */
+  padding: 0.5rem;
+  max-width: 600px;
+  height: 100%;  /* Assicura che l'altezza copra tutto il contenitore */
+}
+
+.intro-team .intro--content .intro--title h1{
+  color: var(--third-blue);
+  text-transform: uppercase;
+  font-size: 8rem;
+  font-family: "ZTGatha", sans-serif;
+}
+
+.intro-team .intro--content .intro--title h1 b{
+  color: var(--pink-utils);
+}
+
+.intro-team .intro--content .intro--image{
+  padding: 0.5rem;
+}
+
+.intro-team .intro--content .intro--image img{
+  max-width: 600px;
+  width: 100%;
+  border-radius: 5rem;
+}
+
+.intro-team .intro--text--description{
+  width: 100%;
+  font-family: "ZTGatha", sans-serif;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+/* SMALL SIZE */
+@media screen and (max-width:500px) {
+  .intro-team .intro--content{
+    flex-direction: column;
+  }
+
+  .intro-team .intro--content .intro--title h1{
+    font-size: 5rem;
+  }
+
+  .intro-team .intro--text--description{
+    width: 100%;
+    font-family: "ZTGatha", sans-serif;
+    font-size: 1.5rem;
+  }
+}
+
+/* MEDIUM SIZE */
+@media screen and (min-width:501px) and (max-width:1000px) {
+  .intro-team .intro--content .intro--title h1{
+    font-size: 3.5rem;
+  }
+}

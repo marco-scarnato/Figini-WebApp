@@ -1,0 +1,163 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  background-color: var(--white);
+  display: flex;  /* Utilizza Flexbox per centrare il contenuto */
+  justify-content: center;  /* Centra il contenuto orizzontalmente */
+  align-items: center;  /* Centra il contenuto verticalmente */
+}
+
+.navbar__content {
+  width: 100%;
+  max-width: 1200px;  /* Imposta una larghezza massima per mantenere le distanze su schermi grandi */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;  /* Spazio tra logo e menu */
+  align-items: center;  /* Centra il contenuto verticalmente */
+  padding: 0 3rem;  /* Mantiene padding laterale */
+}
+
+.navbar__logo {
+  margin: 0;  /* Rimuove i margini per centrare meglio */
+  padding: 1rem;
+}
+
+.navbar__logo img {
+  max-width: 10vw;
+}
+
+/* Riduzione della dimensione del logo quando scorre */
+.navbar--scrolled .navbar__logo img {
+  max-width: 6vw; /* Rimpicciolisce l'immagine del logo */
+}
+
+.navbar__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;  /* Centra gli elementi del menu */
+  list-style-type: none;  /* Rimuove i punti elenco */
+  margin: 0;
+  padding: 0;
+  gap: 5rem;
+}
+
+.navbar__menu li a{
+  display: inline-block;
+  padding: 2rem;
+}
+
+.navbar__menu li a{
+  color: var(--black);
+  opacity: 0.8;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navbar__menu li a:hover {
+  color: var(--pink-utils);
+}
+
+.navbar__hamburger {
+  display: none;
+}
+
+.navbar__menu .special{
+  border: 2px solid var(--pink-utils);
+  border-radius: 5rem;
+  color: var(--pink-utils) !important;
+}
+
+.navbar__menu .special:hover{
+  border: 2px solid var(--third-blue);
+  color: var(--third-blue) !important;
+}
+
+@media screen and (max-width: 700px) {
+
+  .navbar__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar__logo img {
+    max-width: 30vw;
+  }
+  .navbar--scrolled .navbar__logo img {
+    max-width: 30vw;
+  }
+
+  .navbar__menu {
+    display: block;
+    align-content: normal;
+    position: absolute;
+    top: 8.5rem;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+  }
+
+  .navbar__menu.menu_open {
+    height: 100vh;
+  }
+
+  .navbar__menu li{
+    width: 100%;
+    text-align: center;  /* Centro testo all'interno dei link */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .navbar__menu li a{
+    border-bottom: 2px solid var(--third-blue);
+    padding: 0
+  }
+
+  .navbar__hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;  /* Indica che è cliccabile */
+    margin-right: 3rem;
+  }
+
+  .navbar__hamburger span {
+    height: 0.4rem;
+    width: 4.5rem;
+    background-color: var(--third-blue);
+    position: relative;
+    display: block;
+    margin-top: 1.5rem;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1); /* Riduce il tempo di transizione */
+  }
+
+  .navbar__hamburger.menu_open span:first-child {
+    background-color: var(--pink-utils);
+    transform: translateY(0.5rem) rotate(45deg); /* Sposta verso il basso e ruota */
+  }
+
+  .navbar__hamburger.menu_open span:last-child {
+    background-color: var(--pink-utils);
+    transform: translateY(-1.5rem) rotate(-45deg); /* Sposta verso l'alto e ruota */
+  }
+
+  .navbar__menu .special{
+    border: 0;
+    border-radius: 0;
+    color: var(--black) !important;
+  }
+
+  .navbar__menu .special:hover{
+    border: 0;
+    color: var(--pink-utils) !important;
+  }
+}

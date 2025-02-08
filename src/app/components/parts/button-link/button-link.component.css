@@ -1,0 +1,47 @@
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--first-blue);
+  border-radius: 5rem;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Stile di base delle frecce */
+.enter {
+  opacity: 0; /* Nasconde la freccia di sinistra */
+  transform: translateX(-20px); /* Sposta leggermente la freccia di sinistra fuori schermo */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.exit {
+  opacity: 1; /* Mostra la freccia di destra */
+  transform: translateX(10px);
+  transition: opacity 0.3s ease;
+}
+
+/* Hover sul link */
+a:hover {
+  text-decoration: none;
+  color: var(--third-blue);
+  background-color: var(--pink-utils);
+  border-radius: 5rem;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+}
+
+/* Hover su .enter: appare la freccia di sinistra */
+a:hover .enter {
+  opacity: 1; /* Fa apparire la freccia di sinistra */
+  transform: translateX(0); /* Riporta la freccia di sinistra nella sua posizione */
+}
+
+/* Hover su .exit: scompare la freccia di destra */
+a:hover .exit {
+  opacity: 0; /* Nasconde la freccia di destra */
+}

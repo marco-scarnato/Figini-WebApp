@@ -43,19 +43,18 @@
   display: none;
 }
 
-.banner-natale {
-  font-size: 2rem;
-  font-family: "ZTGatha", sans-serif;
-  background: url("src/assets/forBuild/banner-natale.jpg") no-repeat center center;
-  background-size: cover;
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 1rem 1rem;
-}
+/* .banner-special {
+ font-size: 2rem;
+ font-family: "ZTGatha", sans-serif;
+ background: url("src/assets/forBuild/banner-natale.jpg") no-repeat center center;
+ background-size: cover;
+ color: var(--black);
+ display: flex;
+ flex-direction: column;
+ padding: 2rem 1rem 1rem;
+} */
 
-
-.banner-natale .banner--content{
+.banner-special .banner--content{
   border-radius: 2.5rem;
   border: 0.3rem solid var(--white);
   padding: 1rem 3rem;
@@ -83,14 +82,14 @@
     padding-right: 0.2rem;
   }
 
-  .banner-natale {
-    font-size: 1.2rem;
-  }
+  /*.banner-special {*/
+  /*  font-size: 1.2rem;*/
+  /*}*/
 
-  .banner-natale .banner--content{
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-  }
+  /*.banner-special .banner--content{*/
+  /*  padding-left: 0.2rem;*/
+  /*  padding-right: 0.2rem;*/
+  /*}*/
 }
 
 /* MEDIUM SIZE */
@@ -104,12 +103,12 @@
     padding-right: 0.2rem;
   }
 
-  .banner-natale {
-    font-size: 1rem;
-  }
+  /*.banner-special {*/
+  /*  font-size: 1rem;*/
+  /*}*/
 
-  .banner-natale .banner--content{
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-  }
+  /*.banner-special .banner--content{*/
+  /*  padding-left: 0.2rem;*/
+  /*  padding-right: 0.2rem;*/
+  /*}*/
 }

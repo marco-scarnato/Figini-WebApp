@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Se il file o la directory richiesti esistono, servili direttamente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Altrimenti reindirizza tutte le richieste a index.html
+RewriteRule ^(.*)$ /index.html [QSA,L]

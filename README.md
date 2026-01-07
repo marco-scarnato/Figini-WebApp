@@ -1,4 +1,4 @@
-# Figini Studio (https://www.studiodentisticofigini.it/)
+# Figini Studio
 
 ## Comandi utili in fase di test
 
@@ -8,5 +8,8 @@
 
 ## Comandi Utili in fase di sviluppo
 
-- ng build 
+- ng build --configuration production --base-href /
+
+- aggiungi il file .htaccess alla cartella
+- e poi:
 - Poi procediamo a copiare il contenuto all'interno del file manager dell'hosting.

@@ -11,21 +11,20 @@ import {ParodontologiaComponent} from "./components/pages/parodontologia/parodon
 import {PedodonziaComponent} from "./components/pages/pedodonzia/pedodonzia.component";
 import {ProtesiComponent} from "./components/pages/protesi/protesi.component";
 import {OrtodonziaComponent} from "./components/pages/ortodonzia/ortodonzia.component";
-import {LocationStrategy, PathLocationStrategy} from "@angular/common";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'trattamenti', component:TreatmentsComponent},
   {path: 'studio', component: TeamComponent},
 
-  {path: 'trattamenti/igieneEprofilassi', component: IgieneComponent},
-  {path: 'trattamenti/chirugiaOrale', component: ChirurgiaComponent},
-  {path: 'trattamenti/endodonzia', component: EdondonziaComponent},
-  {path: 'trattamenti/implantologia', component: ImplantologiaComponent},
-  {path: 'trattamenti/paradontologia', component: ParodontologiaComponent},
-  {path: 'trattamenti/pedodonzia', component:PedodonziaComponent},
-  {path: 'trattamenti/protesi', component: ProtesiComponent},
-  {path: 'trattamenti/ortodonzia', component: OrtodonziaComponent},
+  {path: 'igieneEprofilassi', component: IgieneComponent},
+  {path: 'chirugiaOrale', component: ChirurgiaComponent},
+  {path: 'endodonzia', component: EdondonziaComponent},
+  {path: 'implantologia', component: ImplantologiaComponent},
+  {path: 'paradontologia', component: ParodontologiaComponent},
+  {path: 'pedodonzia', component:PedodonziaComponent},
+  {path: 'protesi', component: ProtesiComponent},
+  {path: 'ortodonzia', component: OrtodonziaComponent},
 
   {path: '**', redirectTo: ''}
 ];

@@ -38,7 +38,7 @@ export class TeamCardComponent implements OnInit {
       this.roleCard = "Odontotecnico"
     } else if (this.nameCard == "Capasso Elisa") {
       this.srcImage = "ortodentista_elisa.JPG"
-      this.roleCard = "Dottoressa Ortodentista"
+      this.roleCard = "Dottoressa Ortodontista"
       this.cv_link = "/assets/cv/cv_capone_e.pdf"
       this.curriculum = "Curriculum"
     }

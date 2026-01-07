@@ -183,14 +183,9 @@ Dopo ogni deploy, verifica:
 
 Se in futuro vuoi automatizzare completamente il deploy, puoi considerare:
 
-1. **Firebase Hosting** (già configurato nel progetto):
-   ```bash
-   firebase deploy
-   ```
-   
-2. **GitHub Actions** per deploy automatico dopo ogni commit
+1. **GitHub Actions** per deploy automatico dopo ogni commit
 
-3. **Netlify** o **Vercel** (hosting gratuito per progetti statici)
+2. **Netlify** o **Vercel** (hosting gratuito per progetti statici)
 
 Per ora, il metodo manuale con Aruba è perfettamente valido e funzionale!
 

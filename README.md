@@ -144,12 +144,3 @@ Figini-WebApp/
 
 - Non caricare mai file `.env` o chiavi API sul server pubblico
 - Mantieni aggiornate le dipendenze (`npm audit` e `npm audit fix`)
-
-## 📝 Firebase (Deploy alternativo)
-
-Se in futuro volessi passare a Firebase Hosting (più semplice):
-```bash
-firebase deploy
-```
-
-Il file `firebase.json` è già configurato nel progetto.
